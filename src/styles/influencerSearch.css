@@ -1,5 +1,5 @@
 .header-container {
-    height: 200px;
+    height: max-content;
     padding: 20px;
     background: linear-gradient(78.25deg, #112148 44.2%, #091227 72.98%);
 }

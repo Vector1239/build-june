@@ -107,11 +107,11 @@ const Gender = () => {
                     checked={checkedItems[category] || false}
                     onChange={handleCheckboxChange}
                     name={category}
-                    sx={{ width: '50px' }}
+                    sx={{ width: '50px',color:'#4c3dff' }}
                 />
             }
             label={category}
-            sx={{ width: '200px' }}
+            sx={{ width: '200px',}}
         />
     ));
 
@@ -191,12 +191,14 @@ const Gender = () => {
                     </MenuItem>
                 </Select>
             </FormControl>
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+
+
+            <Box sx={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                    <Box sx={{ marginRight: 16, marginLeft: 2 }}>
+                    <Box sx={{ marginRight: 0, marginLeft: 2, bgcolor: 'white', width: 200, padding: 1, borderRadius: 1, marginTop: 1 }}>
                         <InputLabel sx={{ color: '#354682' }}>Age</InputLabel>
                     </Box>
-                    <Button variant="contained" onClick={handleAgeResetClick}>
+                    <Button variant="contained" onClick={handleAgeResetClick} sx={{ bgcolor: '#4c3dff', marginTop: 1 }}>
                         Reset
                     </Button>
                 </Box>
@@ -214,48 +216,61 @@ const Gender = () => {
                         label="Min Age"
                         value={minAge}
                         onChange={handleAgeMinValueChange}
-                        variant="outlined"
+                        variant="filled"
                         type="number"
                         sx={{
-                            width: 100,
+                            width: 130,
                             marginRight: 1,
                             '& input': {
                                 height: 10,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             },
                             '& label': {
                                 marginTop: -0.5,
-                            }
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
+                            },
                         }}
                     />
-                    to
+                    <Box sx={{ color: 'white' }}>to</Box>
                     <TextField
                         id="max-value-input"
                         label="Max Age"
                         value={maxAge}
                         onChange={handleAgeMaxValueChange}
-                        variant="outlined"
+                        variant="filled"
                         type="number"
                         sx={{
-                            width: 100,
+                            width: 130,
                             marginLeft: 1,
                             '& input': {
                                 height: 10,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             },
                             '& label': {
                                 marginTop: -0.5,
-                            }
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
+                            },
                         }}
                     />
                 </Box>
             </Box>
 
+
             {/* FOLLOWERS FOLLOWERS FOLLOWERS  */}
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+            <Box sx={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                    <Box sx={{ marginRight: 36, marginLeft: 2, marginTop: 2 }}>
+                    <Box sx={{ marginRight: 0, marginLeft: 2, marginTop: 1, bgcolor: 'white', width: 340, padding: 1, borderRadius: 1 }}>
                         <InputLabel sx={{ color: '#354682' }}>Followers</InputLabel>
                     </Box>
-                    <Button variant="contained" onClick={handleFlResetClick} sx={{ marginTop: 1 }}>
+                    <Button variant="contained" onClick={handleFlResetClick} sx={{ marginTop: 1, bgcolor: '#4c3dff' }}>
                         Reset
                     </Button>
                 </Box>
@@ -280,45 +295,59 @@ const Gender = () => {
                             marginRight: 1,
                             '& input': {
                                 height: 10,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             },
                             '& label': {
                                 marginTop: -0.5,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             }
                         }}
                     />
-                    to
+                    <Box sx={{ color: 'white' }}>to</Box>
                     <TextField
                         id="max-value-input"
                         label="Max Followers"
                         value={maxfl}
                         onChange={handleFlMaxValueChange}
-                        variant="outlined"
+                        variant="filled"
                         type="number"
                         sx={{
                             width: 200,
                             marginLeft: 1,
                             '& input': {
                                 height: 10,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             },
                             '& label': {
                                 marginTop: -0.5,
+                                backgroundColor: 'white',
+                                borderRadius: 1,
+                                color: '#354682'
                             }
                         }}
                     />
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',width:500 }}>
-                <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            {/* CATEGORIES CATEGORIES  */}
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginTop: 2, marginLeft: 1.5 }}>
+                <Box sx={{ color: 'white' }}><label>Label Categories</label></Box>
+                <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginLeft: 0.5 }}>
                     <FormControlLabel
-                        control={<Checkbox checked={selectAll} onChange={handleSelectAllChange} />}
-                        label="Select All Categories"
+                        control={<Checkbox checked={selectAll} onChange={handleSelectAllChange} sx={{color:'#4c3dff'}}/>}
+                        label="Select All Categories" sx={{color: 'white'}}
                     />
-                    <Button variant="contained" onClick={handleResetClick}>
+                    <Button variant="contained" onClick={handleResetClick} sx={{bgcolor:'#4c3dff'}}>
                         Reset
                     </Button>
                 </Box>
-                <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', marginTop: 2 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', marginTop: 2, color: 'white' }}>
                     {checkboxes}
                 </Box>
             </Box>
