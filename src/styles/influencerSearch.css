@@ -1,0 +1,56 @@
+.header-container {
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(78.25deg, #112148 44.2%, #091227 72.98%);
+}
+
+.search-container {
+    width: 100%;
+    background: #E4E9FF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 169px 47px rgba(76, 61, 255, 0.01), 0px 108px 43px rgba(76, 61, 255, 0.04), 0px 61px 37px rgba(76, 61, 255, 0.15), 0px 27px 27px rgba(76, 61, 255, 0.26), 0px 7px 15px rgba(76, 61, 255, 0.29), 0px 0px 0px rgba(76, 61, 255, 0.3);
+    /* padding: 10px; */
+}
+
+.search-container input[type="text"] {
+    font-size: 16px;
+    background: #E4E9FF;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-container svg {
+    width: 20px;
+    height: 20px;
+    color: #112148;
+    margin-right: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    margin-top: 20px;
+    width: 50%;
+    outline: none;
+    justify-content: space-between;
+}
+
+.dropdown {
+    width: 23%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #354682;
+    border-bottom: 1px solid #E4E9FF;
+    color: #555;
+    font-size: 16px;
+}
+
+.dropdown:not(:last-child) {
+    margin-right: 2%;
+}
+

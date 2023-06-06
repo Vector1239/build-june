@@ -1,0 +1,65 @@
+.table-wrapper {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CampaignsNo {
+    table-layout: fixed;
+    border: none;
+    border-spacing: 0;
+}
+
+.CampaignsNo thead {
+    text-align: center;
+    background-color: #e5edff;
+}
+
+.CampaignsNo th:first-child {
+    width: 30%;
+    border: none;
+}
+
+.CampaignsNo th {
+    padding: 20px;
+    border: none;
+}
+
+.CampaignsNo td {
+    text-align: center;
+    padding: 8px;
+    border: none;
+}
+
+.CampaignsNo tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.CampaignsNo td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.CampaignsNo td:first-child img {
+    margin-right: 10px;
+}
+
+.CampaignsNo th:not(:first-child),
+.CampaignsNo td:not(:first-child) {
+    border-left: none;
+}
+
+.CampaignsNo tr:not(:first-child) td {
+    border-top: 2px solid  rgba(51, 62, 160, 0.5);
+    border-bottom: 2px solid  rgba(51, 62, 160, 0.5);
+    /* add border to each row */
+}
+
+.CampaignsNo tbody {
+    background-color: #f9fbff;
+}
+
+.CampaignsNo tbody tr:last-child {
+    background-color: transparent;
+}

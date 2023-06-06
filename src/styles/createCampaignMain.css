@@ -1,0 +1,107 @@
+.CampaignMainPage {
+    padding: 20px;
+
+}
+
+.btn1 {
+    /* padding: 12px 16px 12px 36px; */
+    cursor: pointer;
+    color: white;
+    background: #111E4D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn1-icon:before {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 32 32'%3E%3Cpath fill='%234C3DFF' d='M16 2A14.172 14.172 0 0 0 2 16a14.172 14.172 0 0 0 14 14a14.172 14.172 0 0 0 14-14A14.172 14.172 0 0 0 16 2Zm8 15h-7v7h-2v-7H8v-2h7V8h2v7h7Z'/%3E%3Cpath fill='none' d='M24 17h-7v7h-2v-7H8v-2h7V8h2v7h7v2z'/%3E%3C/svg%3E");
+}
+
+
+.CMbutton-container {
+    height: 70px;
+    background-color: #112148;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.CMbutton-wrapper {
+    height: 50px;
+    display: flex;
+    width: 50%;
+}
+
+.CMbutton-wrapper button {
+    width: 50%;
+    border-radius: 0;
+    background-color: #4c3dff;
+    color: white;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.CMbutton-wrapper button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.CMbutton-wrapper button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.CMbutton-wrapper button.selected {
+    background-color: #2a1fa9;
+}
+
+.CMTableS {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #112148;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar svg {
+    width: 20px;
+    height: 20px;
+    color: #112148;
+    margin-left: 5px;
+}
+
+.sort-by select {
+    border: 2px solid #112148;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+}
